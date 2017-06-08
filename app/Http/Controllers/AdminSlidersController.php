@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Show;
+use App\Image;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class AdminSlidersController extends Controller
 {
@@ -12,8 +16,9 @@ class AdminSlidersController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
+    {   
+        $sliders = Show::all();
+        return view('admin.slider.index',compact('sliders'));
     }
 
     /**
@@ -35,6 +40,23 @@ class AdminSlidersController extends Controller
     public function store(Request $request)
     {
          
+         $input = $request->all();
+         $file = $request->file('image_id');
+
+         if($file){
+                $name = time().$file->getClientOriginalName();
+                $file->move("images",$name);
+                $photo = Image::create(['file' => $name]);
+                $input['image_id'] = $photo->id;
+
+         }     
+
+         Show::create($input);
+
+         Session::flash('create_Slider','Tạo thành công !!!!');
+
+         return redirect('/admin/sliders');
+         return "success";
     }
 
     /**

@@ -4,7 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SilderImage extends Model
+class Image extends Model
 {
+
+	
     protected $fillable = ['file'];
+
 }

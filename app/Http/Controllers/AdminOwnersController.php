@@ -45,7 +45,7 @@ class AdminOwnersController extends Controller
         $file = $request->file('logo');
 
          if ($file) {
-             $name = $file->getClientOriginalName();
+             $name = time().$file->getClientOriginalName();
              $file->move('images',$name);
              $input['logo'] = $name;
          }
@@ -96,7 +96,7 @@ class AdminOwnersController extends Controller
         if($file){
                unlink(public_path().$owner->logo);        
 
-                 $name = $file->getClientOriginalName();
+                 $name = time().$file->getClientOriginalName();
                  $file->move('images',$name);
                  $input['logo'] = $name;        
 

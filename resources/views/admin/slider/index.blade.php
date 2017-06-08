@@ -1,1 +1,6 @@
-index.blade.php
+@foreach($sliders as $slider)
+
+{{$slider->image->file}}
+
+
+@endforeach

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSilderImagesTable extends Migration
+class CreateImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateSilderImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('silder_images', function (Blueprint $table) {
+        Schema::create('images', function (Blueprint $table) {
             $table->increments('id');
             $table->string('file');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateSilderImagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('silder_images');
+        Schema::dropIfExists('images');
     }
 }

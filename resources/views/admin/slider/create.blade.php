@@ -41,7 +41,7 @@
                                     
                                     <div class="form-group row">
 		                                   {!! Form::label('imageslider_id', 'SliderImage',['class' => 'col-2 col-form-label']) !!}
-		                                   {!! Form::file('imageslider_id', null, ['class'=>'form-control'])!!}
+		                                   {!! Form::file('image_id', null, ['class'=>'form-control'])!!}
                                 	</div>                                    
                                     
                                     <div class="button-group">		                                  
