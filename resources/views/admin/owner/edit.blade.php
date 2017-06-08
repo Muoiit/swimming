@@ -17,7 +17,7 @@
                 <div class="col-sm-3">
 
 
-            <img src="/images/{{$owner->logo}}" alt="" class="img-responsive img-rounded">
+            <img src="{{$owner->logo}}" alt="" class="img-responsive img-rounded">
 
 
                 </div>

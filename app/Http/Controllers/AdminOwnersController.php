@@ -94,12 +94,12 @@ class AdminOwnersController extends Controller
         $file  = $request->file('logo');
 
         if($file){
-                unlink(public_path().'\images\\'.$owner->logo);        
+               unlink(public_path().$owner->logo);        
 
                  $name = $file->getClientOriginalName();
                  $file->move('images',$name);
-                 $input['logo'] = $name;
-             
+                 $input['logo'] = $name;        
+
                  
  
         }else {
@@ -111,9 +111,7 @@ class AdminOwnersController extends Controller
 
           Session::flash('update_owner','Cập nhật thành công !!!!');
 
-          return redirect('/admin/owners');
-
-          
+          return redirect('/admin/owners');       
 
 
 
@@ -130,7 +128,7 @@ class AdminOwnersController extends Controller
          $owner = Owner::findOrFail($id);
 
 
-        unlink(public_path().'\images\\'.$owner->logo); 
+        unlink(public_path().$owner->logo); 
 
 
         $owner->delete();
@@ -140,9 +138,9 @@ class AdminOwnersController extends Controller
 
 
         return redirect('/admin/owners');
+       
+        
 
-        
-        
 
     }
 }

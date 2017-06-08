@@ -59,7 +59,7 @@
                                             <tr>
                                                 <td>{{$owner->id}}</td>
                                                 <td>
-                                                   <img height="50" src="/images/{{$owner->logo}}" alt="">
+                                                   <img height="50" src="{{$owner->logo}}" alt="">
                                                 </td>
                                                 <td> {{$owner->name}}</a></td>
                                                 <td>

@@ -12,7 +12,7 @@ class Owner extends Model
     protected $fillable = ['name','email','phone','address','facebook','twitter','youtube','googleplus','logo'];
 
 
-    public function getFileAttribute($photo){
+    public function getLogoAttribute($photo){
 
 
         return $this->uploads . $photo;
