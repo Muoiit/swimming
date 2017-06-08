@@ -1,0 +1,785 @@
+/*===========================================================================*/
+							/*1280px CSS*/
+/*===========================================================================*/
+
+@media (max-width: 1280px) {
+#banner .caprtion {
+	top: 200px;
+}
+#home-banner .owl-pagination{
+	bottom:190px;
+}
+.children_banner{
+	padding:100px 0;
+}
+.intro-section{
+	margin-bottom:30px;
+}
+.heading-head{
+	margin-bottom:50px;
+}
+.full_gallery .frame{
+	height:auto;
+}
+.footer_map .map_canvas{
+	height:400px;
+}
+.back_top{
+	display:none;
+}
+.home_3 #banner .caprtion{
+	top:100px;
+}
+.children_banner_3{
+	margin-bottom:30px;
+}
+
+}
+
+
+
+
+/*===========================================================================*/
+							/*767px CSS*/
+/*===========================================================================*/
+
+@media (max-width: 767px) {
+.head-top .container-fluid, .head-bottom-row .container-fluid {
+	padding: 0 15px;
+}
+.left-col {
+	width: 100%;
+	padding: 20px 0;
+	display: block;
+	text-align: center;
+}
+.left-col a {
+	display: inline-block;
+	float: none;
+	padding: 0 10px;
+}
+.right-col {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.head-social {
+	float: left;
+}
+.burger-box {
+	display: none;
+}
+.head-bottom-row strong.logo {
+	margin: 0;
+}
+.navigation {
+	width: 100%;
+}
+.search-box {
+	margin: 30px 10px 0 0;
+}
+#nav li {
+	display: block;
+	padding: 0 0 20px 0;
+}
+#nav li ul {
+	position: static;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	background: #fff;
+}
+#header {
+	position: static;
+	padding-bottom: 10px;
+}
+#banner .caprtion {
+	top: 10px;
+}
+#banner .caprtion .holder h1 {
+	font-size: 40px;
+	line-height: 30px;
+	margin: 0 0 15px 0;
+}
+#home-banner .owl-pagination {
+	bottom: 0;
+}
+#banner, .intro_box {
+	margin-bottom: 30px;
+}
+.intro-section, .blog-post {
+	margin: 0;
+}
+.children_banner {
+	padding: 30px 0;
+	margin-bottom: 20px;
+}
+.children_banner .holder {
+	max-width: 100%;
+}
+.heading-head {
+	margin-bottom: 40px;
+}
+.full_gallery .container-fluid .col-md-4 {
+	padding: 0 15px;
+}
+.full_gallery .frame {
+	height: auto;
+	padding: 0;
+}
+.full_gallery {
+	margin-bottom: 40px;
+}
+.post-box .text-box {
+	margin: 28px 0 0 0;
+}
+.footer_map .map_canvas {
+	height: 300px;
+}
+.footer_col {
+	margin-bottom: 30px;
+}
+.footer_col p {
+	clear: both;
+}
+.footer_col h3 {
+	margin: 0 0 15px 0;
+}
+.back_top {
+	display: none;
+}
+.home_2 #header{
+	background:#000;
+}
+.home_2 .navbar-inverse .navbar-collapse, .home_2 .navbar-inverse .navbar-form{
+	background:none;
+}
+.home_2  #nav li ul{
+	width:100%;
+}
+.home_2 #banner .caprtion{
+	top:0;
+}
+.home_2  #home-banner .owl-pagination{
+	display:none;
+}
+.welcome_box{
+	margin:0 0 40px 0;
+}
+.home_3 #banner .caprtion{
+	top:10px;
+}
+.home_3 #banner .caprtion .holder strong.title, .home_3 #banner .caprtion .holder span{
+	padding:0 0 20px 0;
+}
+.home_3 #banner .caprtion .holder h1{
+	margin:0 0 10px 0;
+}
+.welcome_section_3 .welcome_text{
+	margin:0 0 30px 0;
+}
+.welcome_section_3 .modal-dialog{
+	width:100%;
+	margin:0;
+	padding:0 30px;
+}
+.inner-banner{
+	padding:30px 0 60px 0;
+}
+.courses_section .modal-dialog{
+	width:100%;
+	margin:0;
+	padding:0 20px;
+}
+.courses_section .thumb{
+	margin-bottom:20px;
+}
+.advantages .left-col .holder{
+	width:100%;
+	margin:0;
+}
+.advantages .left-col .holder .inner-box h3::before{
+	display:none;
+}
+.advantages .thumb img{
+	width:100%;
+}
+.team_seaction .holder .team_box{
+	margin-bottom:30px;
+}
+.testimonials .holder{
+	width:100%;
+	padding:10px 20px;
+}
+.testimonials{
+	margin:50px 0;
+}
+.register-box .text-box{
+	margin:0 0 20px 0;
+}
+.registration_section{
+	margin-top:30px;
+}
+div.content_cp_accor{
+	padding:20px 30px;
+}
+.contact-row{
+	margin-top:40px;
+}
+.contact-row form input[type="submit"]{
+	margin-bottom:30px;
+}
+}
+
+/*===========================================================================*/
+							/*480px CSS*/
+/*===========================================================================*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+#header {
+	position: static;
+	padding-bottom: 10px;
+}
+.contact-row{
+	margin:30px 0 0 0;
+}
+.inner-banner{
+	padding:30px 0 100px 0;
+}
+.inner-banner h1, .courses_section h2, .team_seaction h2, .register-box .thumb .caption h2, .registration_section h2, .comment-box h2{
+	font-size:30px;
+	line-height:30px;
+}
+.contact-row form input[type="submit"]{
+	margin-bottom:30px;
+}
+.comment-box{
+	margin-bottom:30px;
+}
+.blog_detail blockquote::before{
+	display:none;
+}
+.blog_detail blockquote{
+	margin:0 0 20px 0;
+}
+.share-post strong.title{
+	padding:0 15px 15px 0;
+}
+.share-post ul{
+	float:left;
+}
+.share-post ul li{
+	padding:0 40px 20px 0;
+}
+.share-post{
+	padding:0;
+}
+.registration_section{
+	margin-top:30px;
+}
+div.content_cp_accor{
+	padding:20px;
+}
+.register-box .text-box{
+	margin-bottom:10px;
+}
+.register_row{
+	margin-bottom:20px;
+}
+.courses_section{
+	margin:50px 0 0 0;
+}
+.team_seaction .holder .team_box .text-area{
+	margin:0;
+	width:100%;
+}
+.team_seaction .holder .team_box{
+	margin-bottom:20px;
+}
+.team_seaction .holder .team_box .thumb, .team_seaction .holder .team_box .thumb img, .testimonials .holder .text-box{
+	width:100%;
+}
+.testimonials .holder .text-box{
+	padding:0 10px;
+}
+.team_seaction .holder .team_box .thumb{
+	max-width:100%;
+}
+.courses_section .modal-dialog{
+	width:100%;
+	padding:0 20px;
+	margin:0;
+}
+.courses_section .thumb{
+	margin-bottom:20px;
+}
+.advantages .left-col .holder{
+	width:100%;
+	margin:0;
+}
+.advantages .left-col .holder .inner-box h3::before, .testimonials .holder .thumb::before{
+	display:none;
+}
+.advantages .thumb img{
+	width:100%;
+}
+.inner-banner strong.title{
+	padding:0 0 20px 0;
+}
+.head-top .container-fluid, .head-bottom-row .container-fluid, .full_gallery .container-fluid .col-md-4 {
+	padding: 0 15px;
+}
+.left-col, .right-col, .head-social ul, .footer_social ul {
+	display: block;
+	text-align: center;
+}
+.welcome_section_3 .welcome_text{
+	margin-bottom:30px;
+}
+.welcome_section_3 .modal-dialog{
+	width:100%;
+	padding:0 10px;
+	margin:0;
+}
+.home_3 .intro-section{
+	margin:0;
+}
+.children_banner_3 .holder p{
+	margin:0 0 20px 0;
+}
+.home_3 #banner .caprtion{
+	top:10px;
+}
+#banner .caprtion .holder{
+	max-width:100%;
+	padding:0 15px;
+}
+.home_3 #banner .caprtion .holder h1{
+	margin:0 0 10px 0;
+}
+.home_3 #banner .caprtion .holder span{
+	font-size:40px;
+	line-height:40px;
+	padding:0 0 10px 0;
+}
+.left-col, .right-col {
+	width: 100%;
+}
+.home_3 #home-banner .owl-pagination{
+	display:none;
+}
+.welcome_section_3{
+	margin:0 0 70px 0;
+}
+.left-col a {
+	float: none;
+	display: inline-block;
+	padding: 0 5px 10px 5px;
+}
+.right-col a.btn-register, .head-social ul li, .footer_social ul li {
+	float: none;
+	display: inline-block;
+}
+.right-col {
+	margin: 10px 0 0 0;
+}
+.head-social {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.head-bottom-row strong.logo {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.burger-box {
+	display: none;
+}
+.navigation {
+	float: left;
+	width: 100%;
+}
+.search-box {
+	margin: 10px 30px 0 0;
+}
+#nav li {
+	display: block;
+	padding: 0 0 20px 0;
+}
+#nav li ul {
+	position: static;
+}
+#banner .caprtion {
+	top: 10px;
+}
+#banner .caprtion .holder {
+	width: 100%;
+}
+#banner .caprtion .holder strong.title {
+	font-size: 23px;
+	line-height: 30px;
+	padding: 0 0 10px 0;
+}
+#banner .caprtion .holder h1 {
+	font-size: 30px;
+	line-height: 30px;
+	margin: 0 0 10px 0;
+}
+#banner .caprtion .holder p {
+	display: none;
+}
+#banner .caprtion a.btn-more {
+	font-size: 13px;
+	line-height: 13px;
+	padding: 16px 30px;
+}
+#home-banner .owl-pagination {
+	bottom: -10px;
+}
+#banner, .intro_box {
+	margin-bottom: 30px;
+}
+.intro-section {
+	margin: 0;
+}
+.children_banner {
+	padding: 30px 0;
+	margin-bottom: 20px;
+}
+.children_banner .holder {
+	max-width: 100%;
+}
+.children_banner .holder strong.title {
+	font-size: 55px;
+	line-height: 55px;
+	text-align: center;
+}
+.children_banner .holder h2 {
+	font-size: 50px;
+	line-height: 50px;
+	margin: 0 0 20px 0;
+}
+.heading-head h2 {
+	font-size: 50px;
+}
+.heading-head {
+	margin-bottom: 30px;
+}
+.full_gallery .frame {
+	height: auto;
+	padding: 0;
+}
+.full_gallery .frame a.link {
+	margin: 0 auto 15px;
+}
+.full_gallery .frame h2 {
+	font-size: 20px;
+	line-height: 20px;
+}
+.full_gallery {
+	margin-bottom: 30px;
+}
+.blog-post .heading-head h2 {
+	font-size: 36px;
+}
+.post-box .text-box {
+	margin: 20px 0 0 0;
+	padding: 20px;
+}
+.post-box .text-box span {
+	font-size: 12px;
+	line-height: 12px;
+}
+.post-box .text-box ul li {
+	padding: 15px 10px 15px 0;
+}
+.post-box .text-box ul, .blog-post {
+	margin: 0;
+}
+.footer_col {
+	margin-bottom: 30px;
+}
+.footer_col h3 {
+	margin-bottom: 10px;
+}
+.back_top {
+	display: none;
+}
+.footer_btm_row strong.copy, .footer_social {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.footer_btm_row strong.copy {
+	padding-bottom: 20px;
+}
+.footer_map .map_canvas {
+	height: 280px;
+}
+.footer_col p {
+	clear: both;
+}
+.home_2 #header{
+	background:#000;
+}
+.home_2 .navbar-inverse .navbar-collapse, .home_2 .navbar-inverse .navbar-form{
+	background:none;
+}
+.home_2 .head-bottom-row strong.logo{
+	margin:20px 0 0 0;
+}
+.home_2 .search-box{
+	margin:20px 0 0 0;
+}
+.home_2 #nav li ul{
+	width:100%;
+}
+.home_2 #banner .caprtion{
+	top:0;
+}
+.home_2 #banner .caprtion a.btn-more-2{
+	font-size:14px;
+	line-height:14px;
+	padding:15px 30px;
+}
+.home_2 #home-banner .owl-pagination{
+	display:none;
+}
+.welcome_box{
+	margin:0 0 40px 0;
+}
+.welcome_box h2{
+	font-size:40px;
+	line-height:40px;
+	margin:0 0 20px 0;
+}
+
+
+}
+
+
+
+
+/*===========================================================================*/
+						/*768px And 992px CSS*/
+/*===========================================================================*/
+
+@media (min-width: 768px) and (max-width: 992px) {
+.head-top .container-fluid, .head-bottom-row .container-fluid {
+	padding: 0 15px;
+}
+.contact-row{
+	margin-top:40px;
+}
+.branches_box ul li, .branches_box ul li a{
+	font-size:14px;
+	line-height:20px;
+}
+.blog_detail{
+	margin:30px 0 0 0;
+}
+.share-post ul li{
+	padding:0 12px 0 0;
+}
+.inner-banner{
+	padding:30px 0 50px 0;
+}
+.register-box .thumb .caption h2{
+	font-size:30px;
+	line-height:30px;
+}
+.registration_section{
+	margin-top:30px;
+}
+.courses_section .modal-dialog{
+	width:100%;
+	margin:0;
+	padding:0 20px;
+}
+.testimonials .holder{
+	width:100%;
+	padding:0 20px;
+}
+.courses_section{
+	margin:50px 0 0 0;
+}
+.testimonials .holder .text-box{
+	max-width:100%;
+}
+.courses_section .thumb{
+	margin-bottom:30px;
+}
+.advantages .left-col .holder{
+	width:100%;
+	margin:0;
+	padding:0 20px;
+}
+.advantages .thumb img{
+	width:100%;
+}
+#header {
+	position: static;
+	padding-bottom: 20px;
+}
+#banner .caprtion {
+	top: 30px;
+}
+#banner .caprtion .holder h1 {
+	line-height: 55px;
+}
+#banner .caprtion .holder {
+	max-width: 100%;
+	padding: 0 10px;
+}
+#banner {
+	margin-bottom: 60px;
+}
+#home-banner .owl-pagination {
+	bottom: -30px;
+}
+.intro_box h2 {
+	font-size: 28px;
+	line-height: 30px;
+}
+.intro_box {
+	min-height: 523px;
+}
+.intro-section {
+	margin: 0;
+}
+.children_banner {
+	padding: 40px 0;
+}
+.heading-head {
+	margin-bottom: 40px;
+}
+.full_gallery .frame {
+	height: auto;
+}
+.full_gallery .frame h2 {
+	font-size: 18px;
+	line-height: 20px;
+}
+.full_gallery .frame a.link {
+	margin: 0 auto 15px;
+}
+.post-box .text-box {
+	padding: 20px;
+}
+.blog-post {
+	margin: 0;
+}
+.footer_map .map_canvas {
+	height: 350px;
+}
+.footer_col p {
+	clear: both;
+}
+.back_top {
+	display: none;
+}
+.home_2 #header{
+	background:#000;
+}
+.home_2 #nav li a{
+	padding:0 27px;
+}
+.home_2 #banner .caprtion{
+	top:10px;
+}
+.home_2 #banner .caprtion .holder h1{
+	font-size:50px;
+	margin:0 0 30px 0;
+}
+.home_2 #home-banner .owl-pagination{
+	display:none;
+}
+.welcome_box{
+	margin:0 0 40px 0;
+}
+.home_3 #banner .caprtion{
+	top:10px;
+}
+.welcome_section_3{
+	margin:0 0 50px 0;
+}
+.welcome_section_3 .welcome_text{
+	margin:0 0 20px 0;
+}
+.home_3 .intro-section{
+	margin:0;
+}
+}
+
+
+
+
+
+/*===========================================================================*/
+							/*1199px CSS*/
+/*===========================================================================*/
+
+@media (min-width: 993px) and (max-width: 1199px) {
+#banner .caprtion {
+	top: 230px;
+}
+.navigation {
+	width: 100%;
+}
+#nav {
+	display: block;
+	text-align: center;
+}
+.advantages .left-col .holder{
+	margin:0;
+	width:100%;
+}
+.register-box .thumb .caption h2{
+	font-size:45px;
+}
+.team_seaction .holder .team_box .text-area{
+	margin:0;
+	width:100%;
+}
+.team_seaction .holder .team_box .thumb{
+	max-width:100%;
+}
+.team_seaction .holder .team_box .thumb, .team_seaction .holder .team_box .thumb img{
+	width:100%;
+}
+.home_3 #banner .caprtion{
+	top:50px;
+}
+#home-banner .owl-pagination {
+	bottom: 0;
+}
+#banner {
+	margin-bottom: 30px;
+}
+.intro_box {
+	min-height: 470px;
+}
+.intro-section {
+	margin: 0;
+}
+.children_banner {
+	padding: 50px 0;
+}
+.heading-head {
+	margin-bottom: 40px;
+}
+.full_gallery .frame {
+	height: auto;
+}
+.post-box .text-box {
+	padding: 20px;
+}
+.footer_map .map_canvas {
+	height: 400px;
+}
+.footer_logo > img {
+	width: 100%;
+}
+.back_top {
+	display: none;
+}
+}

@@ -1,0 +1,24 @@
+/*TEXT COLOR*/
+.head-social ul li a:hover, .search-box a, #banner .caprtion .holder h1, .intro_box h2, .children_banner .holder strong.title, .heading-head strong.title, .post-box .text-box ul li a, .footer_col h3, .footer_social ul li a:hover, .back_top, .back_top a, .home_2 .left-col a .fa, .inner-banner h1, .inner-banner .breadcrumb > .active, .blog_detail .detail-row ul li a .fa, .blog_detail blockquote:before, .share-post ul li a .fa, .comment-box form label, .popular-post ul li .text-col span .fa,
+.popular-post ul li:hover a, .contact-row form input[type="text"], .contact-row form textarea, .branches_box ul li .fa, .team_seaction strong, .team_seaction .holder .team-box .text-area span, .team_seaction .holder .team_box .text-area span.name, div.content_cp_accor ul, div.content_cp_accor strong, .courses_section strong, .testimonials .holder span{
+	color:#45C8DC;
+}
+/*TEXT COLOR*/
+
+/*BUTTON COLOR*/
+.right-col a.btn-register, .search-box input[type="submit"], .post-box .text-box a.btn-more, .mail-box input[type="submit"], a.btn-more-2, #banner .caprtion .holder a.btn-more:hover:before, #banner .caprtion .holder a.btn-more:hover:after, #wrapper a.btn-more:hover:before, #wrapper a.btn-more:hover:after, .comment-box form input[type="submit"]:hover{
+	background:#45C8DC;
+}
+/*BUTTON COLOR*/
+
+/*BACKGROUND COLOR*/
+#banner .caprtion .holder a.btn-more, #home-banner .owl-page.active, .intro_box a.btn-more:before, .intro_box  a.btn-more:after, .intro_box:hover, .intro_box:before, .intro_box:after, .children_banner .holder a.btn-more, .full_gallery .frame, .full_gallery .frame  .caption:before, .full_gallery a.btn-more:before, .full_gallery a.btn-more:after, .post-box .frame strong.date, .post-box .text-box ul li:before, #nav li ul li a:hover, #nav li ul li:hover > a, .welcome_box .left_box a.btn-link, .inner-banner h1:before, .pagination_col .pagination li.active a, .pagination_col .pagination li a:hover, .tags li:hover a, .register-box .thumb, .team-social ul li a:hover, .accordion-open, .advantages .left-col, .testimonials .owl-page.active, .navbar-toggle, .navbar-toggle{
+	background:#45C8DC;
+}
+/*BACKGROUND COLOR*/
+
+/*BORDER COLOR*/
+.footer_btm_row, .back_top a, .team_seaction .holder .team_box .text-area, .testimonials .holder{
+	border-color:#45C8DC;
+}
+/*BORDER COLOR*/
