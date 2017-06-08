@@ -18,3 +18,4 @@ Route::get('/', function () {
 
 
 Route::resource('/admin/owners','AdminOwnersController');
+Route::resource('/admin/sliders','AdminSlidersController');

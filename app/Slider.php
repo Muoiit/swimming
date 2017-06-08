@@ -13,8 +13,9 @@ class Slider extends Model
 
      public function sliderImage(){
      	return $this->belongsTo('App\SliderImage');
-     	
+
      }
+     
 
 
 }

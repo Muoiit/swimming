@@ -1,5 +1,5 @@
 <?php
-
+// chưa tạo request đó nhé, chú ý
 namespace App\Http\Controllers;
 
 
