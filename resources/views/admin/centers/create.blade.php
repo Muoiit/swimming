@@ -1,5 +1,5 @@
 a@extends('layouts.admin');
-@section('title','Tạo thông tin owner')
+@section('title','Tạo thông tin Center')
 
 @section('content')
   <div class="page-wrapper">
@@ -16,7 +16,7 @@ a@extends('layouts.admin');
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-block">                              
-                                 <h4 class="card-title">Thêm thông tin owner</h4>
+                                 <h4 class="card-title">Thêm thông tin Center</h4>
                                 <h6 class="card-subtitle"></h6>
                             {!! Form::open(['method'=>'POST', 'action'=> 'AdminOwnersController@store','class'=>'form','files'=>true]) !!}
                              

@@ -1,5 +1,5 @@
 @extends('layouts.admin');
-@section('title','Hiển thị Owner')
+@section('title','Hiển thị thông tin Center')
 @section('content')
 
 <div class="page-wrapper">
@@ -16,7 +16,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-block">
-                                <h4 class="card-title">Thông tin owner</h4>
+                                <h4 class="card-title">Thông tin Center</h4>
                                 <h6 class="card-subtitle"></h6>
                                 <div class="table-responsive">
                                   @if(Session::has('create_owner'))
@@ -45,11 +45,10 @@
                                         <thead>
                                             <tr>
                                                 <th>id</th>
-                                                <th>logo</th>
-                                                <th>name</th>
-                                                <th>email</th>
-                                                <th>address</th>
-                                                <th>phone</th>
+                                                <th>image</th>
+                                                <th>intro</th>
+                                                <th>hotline</th>
+                                                <th>timeOpen</th>                                                
                                                 <th class="text-nowrap">Action</th>
 
                                             </tr>
@@ -68,9 +67,7 @@
                                                 <td>
                                                     {{$owner->address}}
                                                 </td>
-                                                <td>
-                                                    {{$owner->phone}}
-                                                </td>
+                                                
                                                 <td class="text-nowrap">
                                                
                                                     <a href="{{route('owners.edit',$owner->id)}}" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>

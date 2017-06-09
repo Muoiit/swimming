@@ -27,7 +27,8 @@ class AdminSlidersController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
+    {   
+
         return view('admin.slider.create');
     }
 
@@ -78,7 +79,8 @@ class AdminSlidersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $slider = Show::findOrFail($id);
+        return view('admin.slider.edit',compact('slider'));
     }
 
     /**
@@ -90,7 +92,26 @@ class AdminSlidersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $slider = Show::findOrFail($id);
+        $input = $request->all();
+        $file  = $request->file('image_id');
+
+        if($file){
+               unlink(public_path().$slider->image->file);        
+
+                 $name = time().$file->getClientOriginalName();
+                 $file->move('images',$name);
+                 $photo = Image::create(['file' => $name]);
+                 $input['image_id'] = $photo->id;   
+   
+ 
+        }
+
+          $slider->update($input);
+
+          Session::flash('update_slider','Cập nhật thành công !!!!');
+
+          return redirect('/admin/sliders');       
     }
 
     /**
@@ -104,3 +125,5 @@ class AdminSlidersController extends Controller
         //
     }
 }
+
+
