@@ -42,8 +42,8 @@
                         <li>
                             <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Thông tin trung tâm</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="table-basic.html">Basic Tables</a></li>
-                                <li><a href="table-layout.html">Table Layouts</a></li>
+                                <li><a href="{{route('centers.index')}}">Thông tin trung tâm</a></li>
+                                <li><a href="{{route('centers.create')}}">Tạo thêm thông tin</a></li>
                                 
                             </ul>
                         </li>

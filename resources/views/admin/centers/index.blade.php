@@ -19,19 +19,19 @@
                                 <h4 class="card-title">Thông tin Center</h4>
                                 <h6 class="card-subtitle"></h6>
                                 <div class="table-responsive">
-                                  @if(Session::has('create_owner'))
+                                  @if(Session::has('create_center'))
 
                                   <div class="alert alert-success">
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
                                             <h3 class="text-success"><i class="fa fa-check-circle"></i> Success</h3>
-                                            {{session('create_owner')}} 
+                                            {{session('create_center')}} 
                                    </div>
 
-                                   @elseif(Session::has('update_owner'))
+                                   @elseif(Session::has('update_center'))
                                    <div class="alert alert-success">
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
                                             <h3 class="text-success"><i class="fa fa-check-circle"></i> Success</h3>
-                                            {{session('update_owner')}} 
+                                            {{session('update_center')}} 
                                    </div>
 
                                     @elseif(Session::has('deleted_owner'))
@@ -54,29 +54,25 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($owners as $owner)
+                                        @foreach($centers as $center)
                                             <tr>
-                                                <td>{{$owner->id}}</td>
+                                                <td>{{$center->id}}</td>
                                                 <td>
-                                                   <img height="50" src="{{$owner->logo}}" alt="">
+                                                   <img height="50" src="{{$center->image}}" alt="">
                                                 </td>
-                                                <td> {{$owner->name}}</a></td>
+                                                <td> {{$center->intro}}</a></td>
                                                 <td>
-                                                    {{$owner->email}}
+                                                    {{$center->hotline}}
                                                 </td>
                                                 <td>
-                                                    {{$owner->address}}
+                                                    {{$center->timeopen}}
                                                 </td>
                                                 
                                                 <td class="text-nowrap">
                                                
-                                                    <a href="{{route('owners.edit',$owner->id)}}" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
-                                                    {!! Form::open(['method'=>'DELETE','action' => ['AdminOwnersController@destroy',$owner->id]]) !!}
-                                                        
-                                                      {!! Form::submit('Delete',['class' =>'btn btn-warning']) !!}                  
-                                                        
-
-                                                    {!! Form::close() !!}
+                                                    <a href="{{route('centers.edit',$center->id)}}" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                                    
+                                                    <!-- chua lam delete dau nhe -->
                                                 </td>
                                             </tr>
 

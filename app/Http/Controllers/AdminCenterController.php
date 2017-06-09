@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Introcenter;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
-class CenterController extends Controller
+class AdminCenterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,8 +14,10 @@ class CenterController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        
+    {    
+
+        $centers = Introcenter::all();
+        return view('admin.centers.index',compact('centers'));
     }
 
     /**
@@ -23,7 +27,9 @@ class CenterController extends Controller
      */
     public function create()
     {
-        //
+
+        return view('admin.centers.create');
+
     }
 
     /**
@@ -34,7 +40,21 @@ class CenterController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+
+        if ($file=$request->file('image')) {
+             $name = time().$file->getClientOriginalName();
+             $file->move('images',$name);
+             $input['image'] = $name;
+         }        
+
+         Introcenter::create($input);
+
+         Session::flash('create_center','Tạo thành công !!!!');
+
+        return redirect('/admin/centers');
+
+        
     }
 
     /**
@@ -56,7 +76,8 @@ class CenterController extends Controller
      */
     public function edit($id)
     {
-        //
+       $center = Introcenter::findOrFail($id);
+       return view('admin.centers.edit',compact('center'));
     }
 
     /**
@@ -68,7 +89,25 @@ class CenterController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $center = Introcenter::findOrFail($id);
+        $input = $request->all();
+        $file  = $request->file('image');
+
+        if($file){
+
+               unlink(public_path().$center->image);        
+
+                 $name = time().$file->getClientOriginalName();
+                 $file->move('images',$name);
+                 $input['image'] = $name;                 
+ 
+        }
+
+          $center->update($input);
+
+          Session::flash('update_center','Cập nhật thành công !!!!');
+
+          return redirect('/admin/centers');
     }
 
     /**

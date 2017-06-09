@@ -1,4 +1,4 @@
-a@extends('layouts.admin');
+@extends('layouts.admin');
 @section('title','Tạo thông tin owner')
 
 @section('content')
