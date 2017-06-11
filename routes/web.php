@@ -21,3 +21,11 @@ Route::resource('/admin/owners','AdminOwnersController');
 Route::resource('/admin/sliders','AdminSlidersController');
 Route::resource('/admin/centers','AdminCenterController');
 Route::resource('/admin/galleries','AdminGallerisController');
+Route::resource('/admin/course','AdminCourseController');
+Route::resource('/admin/strong','AdminStrongController');
+
+
+
+// Route::get('test', function() {
+//     return view('admin.course.create');
+// });
