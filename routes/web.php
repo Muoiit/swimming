@@ -23,6 +23,8 @@ Route::resource('/admin/centers','AdminCenterController');
 Route::resource('/admin/galleries','AdminGallerisController');
 Route::resource('/admin/course','AdminCourseController');
 Route::resource('/admin/strong','AdminStrongController');
+Route::resource('/admin/instructor','AdminInstructorsController');
+Route::resource('/admin/age','AdminAgesController');
 
 
 

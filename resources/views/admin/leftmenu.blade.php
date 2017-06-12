@@ -31,7 +31,7 @@
                         
                         
                         <li class="nav-devider"></li>
-                        <li class="nav-small-cap">CENTER INFO</li>
+                        <li class="nav-small-cap">Home Page</li>
                         <li>
                             <a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Quản lý Sliders</span></a>
                             <ul aria-expanded="false" class="collapse">
@@ -39,6 +39,7 @@
                                 <li><a href="{{route('sliders.create')}}">Tạo Slider</a></li>                                
                             </ul>
                         </li>
+
                         <li>
                             <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Thông tin trung tâm</span></a>
                             <ul aria-expanded="false" class="collapse">
@@ -47,18 +48,32 @@
                                 
                             </ul>
                         </li>
+
+                         <li>
+                            <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Giới thiệu trung tâm</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="{{route('course.index')}}">Thông tin trung tâm</a></li>
+                                <li><a href="{{route('course.create')}}">Tạo thêm thông tin</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Điểm mạnh của trung tâm</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="{{route('strong.index')}}">Thông tin trung tâm</a></li>
+                                <li><a href="{{route('strong.create')}}">Tạo thêm thông tin</a></li>
+                                
+                            </ul>
+                        </li>
                         
                         <li class="nav-devider"></li>
-                        <li class="nav-small-cap">EXTRA COMPONENTS</li>
+                        <li class="nav-small-cap">Thành Phần khác</li>
                         <li>
-                            <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-book-multiple"></i><span class="hide-menu">Page Layout</span></a>
+                            <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-book-multiple"></i><span class="hide-menu">Quản lý Giáo Viên</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="layout-single-column.html">1 Column</a></li>
-                                <li><a href="layout-fix-header.html">Fix header</a></li>
-                                <li><a href="layout-fix-sidebar.html">Fix sidebar</a></li>
-                                <li><a href="layout-fix-header-sidebar.html">Fixe header &amp; Sidebar</a></li>
-                                <li><a href="layout-boxed.html">Boxed Layout</a></li>
-                                <li><a href="layout-logo-center.html">Logo in Center</a></li>
+                                <li><a href="layout-single-column.html">Thông tin giáo viên</a></li>
+                                <li><a href="layout-fix-header.html">Thêm giáo viên</a></li>                               
                             </ul>
                         </li>
                         <li>
