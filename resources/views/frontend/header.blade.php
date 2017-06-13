@@ -19,7 +19,7 @@
     
     <!--HEAD BOTTOM ROW-->
     <section class="head-bottom-row">
-      <div class="container"> <strong class="logo"><a href="index-2.html"><img src="{{asset('frontend/images/footer_logo.png')}}" alt="logo"></a></strong>
+      <div class="container"> <strong class="logo"><a href="index-2.html"><img src="{{$owner->logo}}" alt="logo"></a></strong>
         <div class="search-box">
           <div class="dropdown"> <a href="#" data-toggle="dropdown"><i class="fa fa-search" aria-hidden="true"></i></a>
             <form action="#" class="dropdown-menu">
@@ -35,12 +35,7 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav" id="nav">
-                <li class="active"><a href="#">Home<span>go to home</span></a>
-                  <ul>
-                    <li><a href="index-2.html">Home 1</a></li>
-                    <li><a href="index-3.html">Home 2</a></li>
-                    <li><a href="index-4.html">Home 3</a></li>
-                  </ul>
+                <li class="active"><a href="{{url('/')}}">Home<span>go to home</span></a>                  
                 </li>
                 <li><a href="about.html">about Us<span>discover</span></a></li>
                 <li><a href="#">courses<span>classes</span></a>

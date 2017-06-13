@@ -5,7 +5,7 @@
 
  <link href="{{asset('assets/plugins/dropzone-master/dist/dropzone.css')}}" rel="stylesheet" type="text/css" />
  
-
+@stop
 
  @section('content')
   <!-- Page wrapper  -->

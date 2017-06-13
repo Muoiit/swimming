@@ -30,26 +30,12 @@
     <section class="welcome_box">
       <div class="container">
         <div class="holder">
-          <h2>Welcome to <span>Swim School</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <h2>Welcome to <span>Ocean Swimming</span></h2>
+          <p>{!! $center->description !!}. </p>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="left_box">
-              <h3>Swimming Lessons</h3>
-              <a href="#" class="btn-link"><i class="fa fa-plus" aria-hidden="true"></i></a>
-              <p>Phasellus sit amet tristique ligula. Donec iaculis leo at 
-                nibh suscipit ultricies. Interdum talesuada </p>
-            </div>
-            <div class="left_box">
-              <h3>Swimming Courses</h3>
-              <a href="#" class="btn-link"><i class="fa fa-plus" aria-hidden="true"></i></a>
-              <p>Phasellus sit amet tristique ligula. Donec iaculis leo at 
-                nibh suscipit ultricies. Interdum talesuada </p>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="thumb"><img src="images/welcome_bg.jpg" alt="img"></div>
+        <div class="row">          
+          <div class="col-md-12">
+            <div class="thumb"><img src="{{$center->image}}" alt="img"></div>
           </div>
         </div>
       </div>
@@ -75,8 +61,11 @@
         </div>
       </div>
       <div class="container-fluid">
+
+
+      @foreach($galleries as $gallery)
         <div class="col-md-4 col-sm-4">
-          <div class="frame"> <img src="images/gallery-img-1.jpg" alt="img">
+          <div class="frame"> <img src="{{$gallery->file}}" alt="img">
             <div class="caption">
               <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a>
                 <h2><a href="#">friendly environment</a></h2>
@@ -84,51 +73,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="frame"> <img src="images/gallery-img-2.jpg" alt="img">
-            <div class="caption">
-              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a>
-                <h2><a href="#">friendly environment</a></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="frame padd-right"> <img src="images/gallery-img-3.jpg" alt="img">
-            <div class="caption">
-              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a>
-                <h2><a href="#">friendly environment</a></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="frame padd-btm"> <img src="images/gallery-img-4.jpg" alt="img">
-            <div class="caption">
-              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a>
-                <h2><a href="#">friendly environment</a></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="frame padd-btm"> <img src="images/gallery-img-5.jpg" alt="img">
-            <div class="caption">
-              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a>
-                <h2><a href="#">friendly environment</a></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="frame padd-right padd-btm"> <img src="images/gallery-img-6.jpg" alt="img">
-            <div class="caption">
-              <div class="holder"> <a href="#" class="link"><i class="fa fa-link" aria-hidden="true"></i></a>
-                <h2><a href="#">friendly environment</a></h2>
-              </div>
-            </div>
-          </div>
-        </div>
+      @endforeach  
+
+        
+
+
       </div>
       <div class="btn-row"> <a href="#" class="btn-more">Load more</a> </div>
     </section>

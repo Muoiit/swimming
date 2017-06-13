@@ -1,7 +1,7 @@
  @extends('layouts.admin')
  @section('title','Tao Strogpoint')
 
- @section('styles')
+@section('styles')
 
   <link href="{{asset('assets/plugins/summernote/dist/summernote.css')}}" rel="stylesheet" />
 @endsection

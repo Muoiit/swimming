@@ -1,6 +1,11 @@
 @extends('layouts.admin');
 @section('title','Tạo thông tin Center')
 
+@section('styles')
+
+  <link href="{{asset('assets/plugins/summernote/dist/summernote.css')}}" rel="stylesheet" />
+@endsection
+
 @section('content')
   <div class="page-wrapper">
             <!-- ============================================================== -->
@@ -29,7 +34,7 @@
                                     <div class="form-group row">
                                         {!! Form::label('description', 'Description',['class' => 'col-2 col-form-label']) !!}
                                         <div class="col-10">
-                                            {!! Form::textarea('description', null, ['class'=>'form-control'])!!}
+                                            {!! Form::textarea('description', null, ['class'=>'form-control summernote'])!!}
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -76,3 +81,32 @@
 
 
 @stop
+
+ @section('script')
+
+    <script src="{{asset('assets/plugins/summernote/dist/summernote.min.js')}}"></script>
+    <script>
+    jQuery(document).ready(function() {
+
+        $('.summernote').summernote({
+            height: 350, // set editor height
+            minHeight: null, // set minimum height of editor
+            maxHeight: null, // set maximum height of editor
+            focus: false // set focus to editable area after initializing summernote
+        });
+
+        $('.inline-editor').summernote({
+            airMode: true
+        });
+
+    });
+
+    window.edit = function() {
+            $(".click2edit").summernote()
+        },
+        window.save = function() {
+            $(".click2edit").summernote('destroy');
+        }
+    </script>
+
+ @endsection
