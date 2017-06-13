@@ -65,8 +65,8 @@
                                                 <td>
                                                     {{$slider->slogan}}
                                                 </td>
-                                                <td>{{$slider->created_at}}</td>
-              									<td>{{$slider->updated_at}}</td>
+                                                <td>{{$slider->created_at->diffForHumans()}}</td>
+              									<td>{{$slider->updated_at->diffForHumans()}}</td>
                                                 <td class="text-nowrap">                                               
                                                     <a href="{{route('sliders.edit',$slider->id)}}" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
                                                     

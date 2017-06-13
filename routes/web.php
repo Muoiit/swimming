@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','HomeController@show');
 
 
 
@@ -28,6 +26,6 @@ Route::resource('/admin/age','AdminAgesController');
 
 
 
-// Route::get('test', function() {
-//     return view('admin.course.create');
-// });
+Route::get('test', function() {
+    return view('home');
+});
